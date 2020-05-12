@@ -1,33 +1,90 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
 body{
   background-size: auto auto;
+  font-size: auto 100vh;
   font-family: 'Montserrat', sans-serif;
-  background-color: rgb(245,135,35);
+  background-color: brown;
+  height: 100vh;
+  
 }
+
+@media(min-width: 400px){
+  body{
+    font-size: 20px;
+   
+  }
+}
+
+@media(min-width: 700px){
+  body{
+    font-size: auto 100vh;
+    background-color: brown;
+  }
+}
+
+
+header{
+  height: 100vh;
+  display: flex;
+  align-items: center;
+}
+
+
+
+section{
+  height: 100vh;
+  background-color: white;
+}
+
+
 
 .menu{
   background-color: black;
-  margin-top: -2.5vh;
-  margin-left: -2vh;
-  margin-right: -2vh;
+  position: fixed;
   color: whitesmoke;
-  box-shadow: 0px 15px 10px -15px #111; 
+  
+  height: 100vh;
 }
+ 
 
 .menu ul{
   display: flex;
   justify-content: space-around;
+  flex-direction: column;
   padding: 20px;
+  align-items: center;
+  height: 100vh;
+  
 
 }
 
 .menu li{
   list-style: none;
-  
+   
 }
+
+.menu hr{
+  margin-top: 3vh;
+  margin-bottom: 3vh;
+  width: 20vw;
+  border-color: brown;
+}
+
+.menu a{
+  display: block;
+  padding: 30px;
+}
+
+
 
 a{
   text-decoration: none;
-  color: white;
+  color: brown;
+  
 }
 
 a:hover{
@@ -35,13 +92,39 @@ a:hover{
 }
 
 .site-subtitle, .site-title{
-  color: whitesmoke;
+  color: black;
   text-align: center;
+  
+  
 }
 
 .site-subtitle{
   font-size: italic;
 }
 
+.site-title{
+  font-size: 4em;
+  text-shadow: 6px 2px 0px white;
+}
 
+
+
+
+.img-portfolio {
+  height: 180px;
+  width: 180px;
+}
+
+.index-container{
+  justify-content: center; 
+  align-self: center;
+  padding: 50px;
+  padding-left: 50vw;
+}
+
+.index-container hr{
+  border-color: black;
+  margin-top: 2vh;
+  
+}
 
