@@ -75,6 +75,10 @@ body{
   }
 }
 
+@media(min-width: 1200px){
+
+}
+
 
 
 header{
@@ -146,19 +150,46 @@ a:hover{
   color: black;
   text-align: center;
   
-  
 }
 
 .site-subtitle{
   font-size: italic;
+  white-space: nowrap;
+  overflow: hidden;
+  border-right: 2px solid rgba(255, 255, 255, 0.75);
+  transition: text-shadow 5s;
 }
 
 .site-title{
   font-size: 4em;
-  text-shadow: 6px 2px 0px white;
+  
+}
+
+.typing-animation {
+  animation: blinkCursor 500ms steps(40) infinite normal,
+    typing 3s steps(40) 1s normal both;
 }
 
 
+@keyframes typing {
+  from {
+    width: 0;
+    
+  }
+  to {
+    width: 60vw;
+    
+  }
+}
+
+@keyframes blinkCursor {
+  from {
+    border-right-color: transparent;
+  }
+  to {
+    border-right-color: transparent;
+  }
+}
 
 
 .img-portfolio {
