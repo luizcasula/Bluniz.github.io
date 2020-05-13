@@ -12,11 +12,28 @@ body{
   
 }
 
-@media(min-width: 400px){
+@media(min-width: 300px){
   body{
-    font-size: 20px;
-   
+    font-size:  2vh;
   }
+
+  .menu{
+    width: 30vw;
+  }
+
+  .menu a{
+    margin-left: -5vw;
+  }
+
+  .index-container{
+   
+    margin-left: -10vw;
+  }
+
+  
+
+  
+  
 }
 
 @media(min-width: 600px){
@@ -27,12 +44,27 @@ body{
 
   .menu a {
    
-    margin-right: -8vw;
+    margin-right: 0vw;
 
   }
+
+  .menu{
+    height: 100vh;
+    
+  }
+
+  .index-container{
+    width: 50vw;
+    margin-left: -5vw;
+    
+  }
+
+  
+
+  
 }
 
-@media(min-width: 300px){
+@media(min-width: 1200px){
 
  .menu{
    height: 120vh;
@@ -69,15 +101,7 @@ body{
   
 }
 
-@media(min-width: 700px){
-  .menu a{
-    font-size: 2em;
-  }
-}
 
-@media(min-width: 1200px){
-
-}
 
 
 
@@ -177,7 +201,7 @@ a:hover{
     
   }
   to {
-    width: 60vw;
+    width: 48vw;
     
   }
 }
@@ -204,9 +228,5 @@ a:hover{
   padding-left: 50vw;
 }
 
-.index-container hr{
-  border-color: black;
-  margin-top: 2vh;
-  
-}
+
 
