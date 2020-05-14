@@ -1,310 +1,170 @@
-*{
+/* soft reset do css */
+* {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
 }
-body{
-  background-size: auto auto;
-  font-size: auto 100vh;
-  font-family: 'Montserrat', sans-serif;
-  background-color: brown;
-  height: 100vh;
+
+body {
   
+  font-family: 'Montserrat', sans-serif;  height: 100vh;
+  font-size: 12px;
 }
 
-header{
+
+
+
+
+/* se a tela tiver pelo menos 400px vai carregar estes estilos */
+@media (min-width: 400px) {
+  body {
+    font-size: 14px;
+  }
+}
+
+/* breakpoint */
+@media (min-width: 600px) {
+  body {
+    font-size: 18px;
+  }
+}
+
+/* breakpoint */
+@media (min-width: 1200px) {
+  body {
+    font-size: 20px;
+  }
+}
+
+header {
   height: 100vh;
   display: flex;
+  justify-content: center;
   align-items: center;
 }
 
-section{
-  height: 100vh;
+.menu {
   background-color: white;
+  position: fixed;
+  width: 100vw;
+  top: 0;
 }
 
-a{
-  text-decoration: none;
-  color: brown;
+.menu ul {
+  display: flex;
+  justify-content: space-around;
+  border-bottom: 1px solid brown;
+}
+
+.menu li {
+ list-style: none; 
+}
+
+.menu a {
   
+  display: block;
+  padding: 10px 20px;
 }
 
-a:hover{
+a {
+  color: brown;
+  text-decoration: none;
+}
+
+.menu li:hover{
   font-weight: bold;
 }
 
-/*Quando a tela tiver largura de 300px*/
-@media(min-width: 300px){
-  body{
-    font-size:  0.8em;
-  }
-  .menu{
-    width: 30vw;
-  }
-  .menu a{
-    margin-left: -5vw;
-  }
-  .index-container{
-    margin-top: 10vh;
-  }
-}
-
-/*Quando a tela tiver largura de 600px*/
-@media(min-width: 600px){
-  body{
-    font-size: 1em;
-    background-color: brown;
-  }
-
-  .menu a {
-   
-    margin-right: 0vw;
-
-  }
-
-  .menu{
-    font-size: 1.5em;
-    height: 100vh;
-    
-  }
-
-  .index-container{
-    align-items: center;
-    padding: 15vw ;
-    
-  }
-  
-}
-/*Quanto a tela tiver 1200px de largura*/
-@media(min-width: 1200px){
-
- .menu{
-   height: 120vh;
-   width: 20vw;
- }
-
-   .menu ul hr{
-     width: 17vw;
-   }
-  .menu li{
-    width: 10vw;
-    font-size: 15px;
-
-  }
-
-  .menu a {
-    margin-left: 4.2vw;
-  }
-
-  .index-container{
-    text-align: center;
-    padding: 10px;
-  }
-
-}
-
-.menu{
-  background-color: black;
-  position: fixed;
-  color: whitesmoke;
-  height: 100vh;
-  align-items: center;
-  
-}
- 
-
-.menu ul{
-  display: flex;
-  justify-content: space-around;
-  flex-direction: column;
-  padding: 20px;
-  text-align: center;
-  height: 100vh;
-}
-
-.menu li{
-  list-style: none;
-}
-
-.menu hr{
-  margin-top: 3vh;
-  margin-bottom: 3vh;
-  width: 20vw;
-  border-color: brown;
-}
-
-.menu a{
-  display: block;
-  padding: 30px;
-}
-
-
-.site-subtitle, .site-title, .frase{
-  color: black;
-}
-.frase{
-  font-family: 'Geo', sans-serif;
-}
-
-.site-subtitle{
-
-  font-size: 1em;
-  font-style: italic;
-}
-
-.index-container{
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  width: 50vw;
-  font-size: 2em;
-  margin-left: 35vw;
-  margin-bottom: 15vh;
-
-}
-
-.index-container hr{
-  width: 30vw;
-  border: 1.5px solid black;
-}
-
-
-
-#sobre{
-  display: flex;
-  flex-direction: column;
-  background-color: brown;
-}
-
-
-
-.sobre-title{
-  
-  font-size: 4em;
-  color: black;
-  margin-left: 52vw;
-}
-
-.status{
- 
-  align-self: center;
-  
-  height: 50vh;
-  width: 100vw;
-}
-
-
-.teste2{
-  display: flex;
-  width: 60vw;
-  height: 30vh;
-  margin-top: 10vh;
-  margin-left: 27vw;
-
-}
-
-.perfil{
-  width: 15vw;
-  height: 30vh;
-  border: 2px solid black;
-}
-
-.teste2 h3{
-  color: black;
- margin-left: 1vw;
- margin-top: 3.5vw;
- 
-}
-
-.teste2 hr{
-  border: none;
- border-left: 2px solid black;
- height: 30vh;
- margin-left: 1vw;
-}
-
-.perfil2{
-  display: grid;
-  grid-template-columns: auto auto;
-  margin-top: 2vh;
-  margin-left: 27vw;
-  width: 60vw;
-  height: 45vh;
-  border-top: 2px solid black;
-}
-
-.skills{
-  
-  display: grid;
-  grid-template-columns: repeat(3, 0.3fr);
-  align-items: center;
-  margin-top: 1vh;
-  height: 20vh;
-  width: 30vw;
-  
-}
-
-.me{
-
-  margin-top: 1vh;
-  height: 40vh;
-  width: 30vw;
-  border-left: 2px solid black;
-}
-
-.skills h4{
-  
-  background-color: black;
+.site-subtitle, 
+.site-title {
   color: brown;
   text-align: center;
-  width: 8.7vw;
-  margin-left: 0.5vw;
-  
+}
+
+.site-title {
+  font-size: 4em;
+}
+
+.site-subtitle {
+ font-style: italic;
+ line-height: 1.8em;
+}
+
+.portfolio {
+  background-color: brown;
+  padding: 2em;
+  height: 100vh auto;
+}
+
+.portfolio h2 {
+  color: whitesmoke;
+  margin-bottom: 1.5em;
+  font-size: 2em;
+}
+
+.portfolio .grid {
+  display: grid;
+  gap: 2em;
+}
+
+@media (min-width: 560px) {
+  .portfolio .grid {
+    grid-template-columns: 240px 240px;
+  }
+
  
 }
 
-.me h4{
-  font-size: 0.9em;
-  text-align: justify;
-  margin-left: 1vw;
-  margin-top: 3vh;
-}
-
-.projetos{
-  background-color: brown;
-  padding: 2em;
-  height: 100vh;
-}
-
-.projetos .grid{
-  display: grid;
-  gap: 2em;
-  grid-template-columns: repeat(3, 260px);
+@media (min-width: 880px) {
+  .portfolio .grid {
+    grid-template-columns: repeat(3, 260px);
     align-content: center;
     justify-content: center;
-    margin-left: 20vw;
+    height: calc(100vh - 8em - 48px);
+  }
+  
 }
 
-.projetos figure {
+.portfolio figure {
   text-align: center;
+}
+
+.portfolio figcaption{
+  background-color: white;
+  color: brown
 }
 
 .img-portfolio {
   height: 180px;
-  width: 240px;
+  width: 260px;
   object-fit: cover;
   object-position: left bottom;
-  border: 2px solid black;
 }
 
-.projetos figcaption{
-  color: brown;
-  background-color: black;
-  width: 240px;
-  height: 3.8vh;
-  margin-left: 0.7vw;
-  margin-top: -0.6vh;
+.contato{
+  height: 8vh;
+  border-top: 1px solid black;
 }
 
+.icons{
+  width: 3vw;
+  height: 5vh;
+  margin-left: 2.5vw;
+}
+.contato a{
+  margin-top: 1vh;
+}
 
+.contato a:hover{
+  font-weight: bold;
+  cursor: pointer;
+}
 
+.contato div{
+  display: grid;
+  grid-template-columns: repeat(2, 100px);
+  row-gap: 2px;
+  margin-top: 1vh;
+  
+}
+ 
