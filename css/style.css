@@ -54,6 +54,7 @@ header {
   display: flex;
   justify-content: space-around;
   border-bottom: 1px solid brown;
+  
 }
 
 .menu li {
@@ -86,6 +87,7 @@ a {
 }
 
 .site-subtitle {
+  font-family: 'Geo', sans-serif;
  font-style: italic;
  line-height: 1.8em;
 }
@@ -141,30 +143,4 @@ a {
   object-position: left bottom;
 }
 
-.contato{
-  height: 8vh;
-  border-top: 1px solid black;
-}
 
-.icons{
-  width: 3vw;
-  height: 5vh;
-  margin-left: 2.5vw;
-}
-.contato a{
-  margin-top: 1vh;
-}
-
-.contato a:hover{
-  font-weight: bold;
-  cursor: pointer;
-}
-
-.contato div{
-  display: grid;
-  grid-template-columns: repeat(2, 100px);
-  row-gap: 2px;
-  margin-top: 1vh;
-  
-}
- 
