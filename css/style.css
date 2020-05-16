@@ -78,10 +78,11 @@ a {
 
 .menu li:hover{
   font-weight: bold;
+  transition: transform 500ms;
 }
 
 .menu a:hover{
-  transform: rotate(5deg);
+  transform: scale(1.1);
 }
 
 
@@ -102,6 +103,12 @@ a {
   margin-left: 5px;
   opacity: 0;
   animation: pisca .8s infinite;
+}
+
+.site-subtitle{
+  opacity: 0;
+  animation: linear 2s irProLado forwards;
+
 }
 
 
@@ -137,9 +144,6 @@ header div a:hover{
 }
 
 
-
-
-
 .portfolio {
   background-color: brown;
   padding: 2em;
@@ -150,11 +154,23 @@ header div a:hover{
   color: whitesmoke;
   margin-bottom: 1.5em;
   font-size: 2em;
+  opacity: 0;
+  animation: linear 2s irProLado forwards;
+
 }
 
 .portfolio .grid {
   display: grid;
   gap: 2em;
+  opacity: 0;
+  animation: linear 2s irProLado forwards;
+}
+
+@keyframes irProLado{
+  100%{
+    opacity: 1;
+  }
+
 }
 
 @media (min-width: 560px) {
@@ -196,7 +212,7 @@ header div a:hover{
 @media(min-width: 320px){
   .portfolio figcaption{
     width: 260px;
-    margin-left: 2vw;
+    margin-left: 7.2vw;
   }
 }
 
@@ -232,6 +248,11 @@ header div a:hover{
 
 .portfolio figure {
   text-align: center;
+  transition: transform 500ms;
+}
+
+.portfolio figure:hover{
+  transform: scale(1.2);
 }
 
 .portfolio figcaption{
@@ -245,5 +266,113 @@ header div a:hover{
   object-fit: cover;
   object-position: left bottom;
 }
+
+.sobre{
+  height: 100vh auto;
+  padding: 2em;
+  background-color: rgb(143, 77, 77);
+  overflow: hidden;
+}
+
+.sobre h2{
+  color: whitesmoke;
+  margin-bottom: 1.5em;
+  font-size: 2em;
+}
+
+.sobre img{
+  width: 200px;
+  height: 200px;
+}
+
+.stats{
+  display: flex;
+  color: whitesmoke;
+  opacity: 0;
+  transition: opacity 2s;
+}
+
+.f1, .f2, .f3{
+  margin-left: 1vw;
+  margin-top: 2vh;
+}
+.f1, .f2{
+  border-right: 2px solid whitesmoke;
+}
+
+.sobre button{
+  margin-top: 1vh;
+  height: 40px;
+  width: 200px;
+  background-color: whitesmoke;
+  border: none;
+  color: rgb(143, 77, 77);
+  font-size: 1em;
+  font-weight: bold;
+  
+}
+
+.sobre button:hover{
+  background-color: brown;
+  color: whitesmoke;
+}
+
+@media(min-width: 300px){
+  .stats{
+    font-size: 10px;
+  }
+
+  .stats img{
+    width: 100px;
+    height: 150px;
+    margin-top: 2vh;
+  }
+
+  .f1,.f2,.f3{
+    margin-left: 2vw;
+  }
+
+  .sobre button{
+    margin-top: 3vh;
+    margin-left: 16vw;
+  }
+}
+
+@media(min-width: 320px){
+  .stats img{
+    width: 80px;
+    height: 120px;
+    margin-top: 2vh;
+    margin-left: -3vh;
+  }
+}
+
+@media(min-width: 1200px){
+  .sobre img{
+    width: 200px;
+    height: 200px;
+  }
+  
+  .stats{
+    
+    font-size: 20px;
+  }
+  .sobre button{
+    margin-left: -1.5vw; 
+  }
+
+}
+
+.be{
+  display: flex;
+  justify-content: center;
+  height: 100vh auto;
+  background-color: hsla(0, 59%, 41%, 0.8);
+}
+
+
+
+
+
 
 
